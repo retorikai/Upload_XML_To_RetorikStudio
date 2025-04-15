@@ -111,11 +111,11 @@ async function sendFileToRetorik(document) {
 
     await axios.post(retorikApiUrl, document, { headers });
     console.log(
-      `Décision ${document.ContentItemId} envoyée avec succès à Retorik.`
+      `Fichier ${document.ContentItemId} envoyé avec succès à Retorik.`
     );
   } catch (error) {
     console.error(
-      "Erreur lors de l'envoi de la décision à Retorik :",
+      "Erreur lors de l'envoi du fichier à Retorik :",
       error.response ? error.response.data : error.message
     );
   }
